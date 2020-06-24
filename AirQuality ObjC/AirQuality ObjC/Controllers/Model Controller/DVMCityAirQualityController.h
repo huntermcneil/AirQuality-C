@@ -7,12 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DVMCityAirQuality.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DVMCityAirQualityController : NSObject
 
-+ (void)fetchSupportedCountries:()
++ (void)fetchSupportedCountries:(void (^) (NSArray<NSString *> *_Nullable, NSError *error)) completion;
+
++ (void)fetchSupportedStatesInCountry:(NSString *)country completion:(void (^) (NSArray<NSString *> *_Nullable, NSError *error)) completion;
+
++(void)fetchSupportedCitiesInState:(NSString *)state country:(NSString *)country completion:(void (^) (NSArray<NSString *> *_Nullable, NSError *error))completion;
+
++(void)fetchDataForCity:(NSString *)city state:(NSString *)state country:(NSString *)country completion:(void (^) (DVMCityAirQuality *_Nullable, NSError *error))completion;
 
 @end
 
