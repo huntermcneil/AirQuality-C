@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6100B29924A3E79600A10D5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6100B29824A3E79600A10D5D /* Main.storyboard */; };
+		6100B2A124A3EA4400A10D5D /* DVMCityAirQuality.m in Sources */ = {isa = PBXBuildFile; fileRef = 6100B2A024A3EA4400A10D5D /* DVMCityAirQuality.m */; };
+		6100B2A424A3F10300A10D5D /* DVMWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 6100B2A324A3F10300A10D5D /* DVMWeather.m */; };
+		6100B2A824A3F25100A10D5D /* DVMPollution.m in Sources */ = {isa = PBXBuildFile; fileRef = 6100B2A724A3F25100A10D5D /* DVMPollution.m */; };
+		6100B2AB24A4034400A10D5D /* DVMCityAirQualityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6100B2AA24A4034400A10D5D /* DVMCityAirQualityController.m */; };
 		620C4FC02385DBF6001500FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C4FBF2385DBF6001500FE /* AppDelegate.m */; };
 		620C4FC32385DBF6001500FE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C4FC22385DBF6001500FE /* SceneDelegate.m */; };
 		620C4FCB2385DBF9001500FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620C4FCA2385DBF9001500FE /* Assets.xcassets */; };
@@ -15,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6100B29824A3E79600A10D5D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6100B29F24A3EA4400A10D5D /* DVMCityAirQuality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCityAirQuality.h; sourceTree = "<group>"; };
+		6100B2A024A3EA4400A10D5D /* DVMCityAirQuality.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCityAirQuality.m; sourceTree = "<group>"; };
+		6100B2A224A3F10300A10D5D /* DVMWeather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMWeather.h; sourceTree = "<group>"; };
+		6100B2A324A3F10300A10D5D /* DVMWeather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMWeather.m; sourceTree = "<group>"; };
+		6100B2A624A3F25100A10D5D /* DVMPollution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMPollution.h; sourceTree = "<group>"; };
+		6100B2A724A3F25100A10D5D /* DVMPollution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMPollution.m; sourceTree = "<group>"; };
+		6100B2A924A4034400A10D5D /* DVMCityAirQualityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCityAirQualityController.h; sourceTree = "<group>"; };
+		6100B2AA24A4034400A10D5D /* DVMCityAirQualityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCityAirQualityController.m; sourceTree = "<group>"; };
 		620C4FBB2385DBF6001500FE /* AirQuality ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirQuality ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		620C4FBE2385DBF6001500FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		620C4FBF2385DBF6001500FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,6 +51,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6100B29A24A3E80100A10D5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6100B29824A3E79600A10D5D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6100B29B24A3E80D00A10D5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6100B29F24A3EA4400A10D5D /* DVMCityAirQuality.h */,
+				6100B2A024A3EA4400A10D5D /* DVMCityAirQuality.m */,
+				6100B2A224A3F10300A10D5D /* DVMWeather.h */,
+				6100B2A324A3F10300A10D5D /* DVMWeather.m */,
+				6100B2A624A3F25100A10D5D /* DVMPollution.h */,
+				6100B2A724A3F25100A10D5D /* DVMPollution.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6100B29C24A3E81200A10D5D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6100B29E24A3E81D00A10D5D /* View Controller */,
+				6100B29D24A3E81800A10D5D /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6100B29D24A3E81800A10D5D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6100B2A924A4034400A10D5D /* DVMCityAirQualityController.h */,
+				6100B2AA24A4034400A10D5D /* DVMCityAirQualityController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		6100B29E24A3E81D00A10D5D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		620C4FB22385DBF6001500FE = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +116,9 @@
 		620C4FBD2385DBF6001500FE /* AirQuality ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				6100B29C24A3E81200A10D5D /* Controllers */,
+				6100B29B24A3E80D00A10D5D /* Model */,
+				6100B29A24A3E80100A10D5D /* View */,
 				620C4FD72385DDA8001500FE /* Resources */,
 			);
 			path = "AirQuality ObjC";
@@ -135,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6100B29924A3E79600A10D5D /* Main.storyboard in Resources */,
 				620C4FCE2385DBF9001500FE /* LaunchScreen.storyboard in Resources */,
 				620C4FCB2385DBF9001500FE /* Assets.xcassets in Resources */,
 			);
@@ -148,8 +212,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				620C4FC02385DBF6001500FE /* AppDelegate.m in Sources */,
+				6100B2A424A3F10300A10D5D /* DVMWeather.m in Sources */,
 				620C4FD12385DBF9001500FE /* main.m in Sources */,
 				620C4FC32385DBF6001500FE /* SceneDelegate.m in Sources */,
+				6100B2A824A3F25100A10D5D /* DVMPollution.m in Sources */,
+				6100B2AB24A4034400A10D5D /* DVMCityAirQualityController.m in Sources */,
+				6100B2A124A3EA4400A10D5D /* DVMCityAirQuality.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
